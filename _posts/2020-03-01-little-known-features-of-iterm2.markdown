@@ -16,7 +16,7 @@ Here are a couple of examples:
 
 ![Gif showing smart selection opening a commit on Github]({{ "/assets/iTerm2-smart-selection-github.gif" | relative_url }}){:max-height="400px"}.
 
-To make command-clicking on a commit hash open it in Github, do the following:
+To make Command-clicking on a commit hash open it in Github, do the following:
 
 1. Install [hub](https://github.com/github/hub)
 2. In your iTerm2 Preferences, go to `Profiles -> Advanced -> Smart Selection -> Edit`
@@ -25,7 +25,7 @@ To make command-clicking on a commit hash open it in Github, do the following:
 5. Set the `Action` to `Run Command...`
 6. Set the `Parameter` to `cd "\d" && /usr/local/bin/hub browse -- commit/\0`. You may have to update the path to `hub` here if you installed it to a different directory.
 
-Once this is done, Command-click on a commit hash in iTerm2 should open it in its respective repository if it exists on Github. You can customize this technique to open PRs and Issues on Github as well.
+Once this is done, `Command-click` on a commit hash in iTerm2 should open it in its respective repository if it exists on Github. You can customize this technique to open PRs and Issues on Github as well.
 
 ### Open revisions in Phabricator
 
@@ -35,7 +35,7 @@ Once this is done, Command-click on a commit hash in iTerm2 should open it in it
 4. Set the `Action` to `Open URL...`
 5. Set the `Parameter` to `https://secure.phabricator.com/\0` or a similar URL for your organization.
 
-## Dynamic Profiles
+## Dynamic Profiles  {#dynamic-profiles}
 
 If you work on a project that requires starting a number of terminal sessions in specific conditions, it can get annoying to get your environment running from scratch. iTerm2's [Dynamic Profiles](https://www.iterm2.com/documentation-dynamic-profiles.html) allow you to create custom profiles that can depend on other profiles. You can use this to create a hierarchy of profiles that share your common settings but run different commands on startup.
 

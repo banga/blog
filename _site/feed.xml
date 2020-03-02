@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2020-03-01T20:10:18-08:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Shrey Banga’s Blog</title><subtitle>Blogging like it's 2005</subtitle><author><name>Shrey Banga</name></author><entry><title type="html">Little known features of iTerm2</title><link href="http://localhost:4000/blog/2020/03/01/little-known-features-of-iterm2.html" rel="alternate" type="text/html" title="Little known features of iTerm2" /><published>2020-03-01T17:08:04-08:00</published><updated>2020-03-01T17:08:04-08:00</updated><id>http://localhost:4000/blog/2020/03/01/little-known-features-of-iterm2</id><content type="html" xml:base="http://localhost:4000/blog/2020/03/01/little-known-features-of-iterm2.html">&lt;p&gt;&lt;a href=&quot;https://iterm2.com/&quot;&gt;iTerm2&lt;/a&gt; has a lot of little-known features that can make development much easier.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2020-03-01T20:25:42-08:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Shrey Banga’s Blog</title><subtitle>Blogging like it's 2005</subtitle><author><name>Shrey Banga</name></author><entry><title type="html">Little known features of iTerm2</title><link href="http://localhost:4000/blog/2020/03/01/little-known-features-of-iterm2.html" rel="alternate" type="text/html" title="Little known features of iTerm2" /><published>2020-03-01T17:08:04-08:00</published><updated>2020-03-01T17:08:04-08:00</updated><id>http://localhost:4000/blog/2020/03/01/little-known-features-of-iterm2</id><content type="html" xml:base="http://localhost:4000/blog/2020/03/01/little-known-features-of-iterm2.html">&lt;p&gt;&lt;a href=&quot;https://iterm2.com/&quot;&gt;iTerm2&lt;/a&gt; has a lot of little-known features that can make development much easier.&lt;/p&gt;
 
 &lt;h2 id=&quot;smart-selection&quot;&gt;Smart Selection&lt;/h2&gt;
 
@@ -10,7 +10,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/blog/assets/iTerm2-smart-selection-github.gif&quot; alt=&quot;Gif showing smart selection opening a commit on Github&quot; max-height=&quot;400px&quot; /&gt;.&lt;/p&gt;
 
-&lt;p&gt;To make command-clicking on a commit hash open it in Github, do the following:&lt;/p&gt;
+&lt;p&gt;To make Command-clicking on a commit hash open it in Github, do the following:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Install &lt;a href=&quot;https://github.com/github/hub&quot;&gt;hub&lt;/a&gt;&lt;/li&gt;
@@ -21,7 +21,7 @@
   &lt;li&gt;Set the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Parameter&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd &quot;\d&quot; &amp;amp;&amp;amp; /usr/local/bin/hub browse -- commit/\0&lt;/code&gt;. You may have to update the path to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hub&lt;/code&gt; here if you installed it to a different directory.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Once this is done, Command-click on a commit hash in iTerm2 should open it in its respective repository if it exists on Github. You can customize this technique to open PRs and Issues on Github as well.&lt;/p&gt;
+&lt;p&gt;Once this is done, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Command-click&lt;/code&gt; on a commit hash in iTerm2 should open it in its respective repository if it exists on Github. You can customize this technique to open PRs and Issues on Github as well.&lt;/p&gt;
 
 &lt;h3 id=&quot;open-revisions-in-phabricator&quot;&gt;Open revisions in Phabricator&lt;/h3&gt;
 
