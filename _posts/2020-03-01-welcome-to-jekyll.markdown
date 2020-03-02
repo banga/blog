@@ -1,25 +1,79 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2020-03-01 12:31:04 -0800
-categories: jekyll update
+title:  "Little known features of iTerm2"
+date:   2020-03-01 17:08:04 -0800
+categories: iterm2 development
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+[iTerm2](https://iterm2.com/) has a lot of little-known features that can make development much easier.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+## Smart Selection  {#smart-selection}
 
-Jekyll also offers powerful support for code snippets:
+If you work in a large codebase, chances are you often need to open commits on Github, or revisions in Phabricator or tickets in your in-house bug tracker. This usually involves copying and pasting an identifier into a URL and opening that in your browser. For example, you may want to open commit hashes or PRs on Github with a single click. You can make iTerm2 recognize arbitrary ids and take custom actions using them when they are Command-clicked via [Smart Selections](https://www.iterm2.com/documentation-smart-selection.html).
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+Here are a couple of examples:
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+### Open commits on Github
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+![Gif showing smart selection opening a commit on Github]({{ "/assets/iTerm2-smart-selection-github.gif" | relative_url }}){:max-height="400px"}.
+
+To make command-clicking on a commit hash open it in Github, do the following:
+
+1. Install [hub](https://github.com/github/hub)
+2. In your iTerm2 Preferences, go to `Profiles -> Advanced -> Smart Selection -> Edit`
+3. Click the `+` button to add a new rule and set the `Regular Expression` to `[0-9a-f]{8,40}`
+4. Click on `Edit Actions...` and add a new action
+5. Set the `Action` to `Run Command...`
+6. Set the `Parameter` to `cd "\d" && /usr/local/bin/hub browse -- commit/\0`. You may have to update the path to `hub` here if you installed it to a different directory.
+
+Once this is done, Command-click on a commit hash in iTerm2 should open it in its respective repository if it exists on Github. You can customize this technique to open PRs and Issues on Github as well.
+
+### Open revisions in Phabricator
+
+1. In your iTerm2 Preferences, go to `Profiles -> Advanced -> Smart Selection -> Edit`
+2. Click the `+` button to add a new rule and set the `Regular Expression` to `D[:number:]{5}`
+3. Click on `Edit Actions...` and add a new action
+4. Set the `Action` to `Open URL...`
+5. Set the `Parameter` to `https://secure.phabricator.com/\0` or a similar URL for your organization.
+
+## Dynamic Profiles
+
+If you work on a project that requires starting a number of terminal sessions in specific conditions, it can get annoying to get your environment running from scratch. iTerm2's [Dynamic Profiles](https://www.iterm2.com/documentation-dynamic-profiles.html) allow you to create custom profiles that can depend on other profiles. You can use this to create a hierarchy of profiles that share your common settings but run different commands on startup.
+
+For example, say your project always needs you to be running `npm run build`, `npm run server` and `npm run worker` during development. You can use dynamic profiles to start iTerm2 with all of these commands running as follows:
+
+1. Generate four GUIDs by running `uuidgen` in your terminal four times and copying the results.
+2. Create a file in `~/Library/Application Support/iTerm2/DynamicProfiles` with these contents (fill in the parts in `<...>`):
+```json
+{
+  "Profiles": [
+    {
+      "Name": "Development",
+      "Guid": "<guid1>",
+      "Dynamic Profile Parent Name": "Default",
+      "Working Directory": "<path-to-your-project>",
+      "Custom Directory": "Yes"
+    },
+    {
+      "Name": "Build",
+      "Guid": "<guid2>",
+      "Dynamic Profile Parent Name": "Development",
+      "Initial Text": "npm run build"
+    },
+    {
+      "Name": "Server",
+      "Guid": "<guid3>",
+      "Dynamic Profile Parent Name": "Development",
+      "Initial Text": "npm run server"
+    },
+    {
+      "Name": "Worker",
+      "Guid": "<guid4>",
+      "Dynamic Profile Parent Name": "Development",
+      "Initial Text": "npm run worker"
+    }
+  ]
+}
+```
+3. Reload iTerm2
+
+These profiles should now show up in iTerm2 as dynamic profiles. You can then start sessions with these profiles to create a window arrangement and hit `Command-Shift-S` to save it. Then you can start all of these sessions at any time by just pressing `Command-Shift-R` or tell iTerm2 to open the arrangement when it starts! Check out <https://blog.andrewray.me/how-to-create-custom-iterm2-window-arrangments/> for a detailed guide on window arrangements.
