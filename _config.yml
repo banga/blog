@@ -24,6 +24,7 @@ twitter_username: banga_shrey
 github_username: banga
 repository: blog
 show_excerpts: true
+permalink: /:year/:month/:day/:title:output_ext
 
 # Build settings
 markdown: kramdown
