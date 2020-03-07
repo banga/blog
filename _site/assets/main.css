@@ -6,7 +6,7 @@ body { --primary-fg-color: rgba(0, 0, 0, 0.8); --light-fg-color: rgba(0, 0, 0, 0
 
 @media (prefers-color-scheme: dark) { body { --primary-fg-color: rgba(255, 255, 255, 0.75); --light-fg-color: rgba(255, 255, 255, 0.5); --lighter-fg-color: rgba(255, 255, 255, 0.1); --primary-bg-color: #22252a; --dark-bg-color: #242e42; --darker-bg-color: #264067; --accent-color: #6bcaff; } }
 /** Basic styling */
-body { font: 400 16px/1.5 Georgia, "Times New Roman", serif; color: var(--text-color); background-color: var(--primary-bg-color); -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; }
+body { font: 400 16px/1.5 "Lora", Georgia, "Times New Roman", serif; color: var(--text-color); background-color: var(--primary-bg-color); -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; }
@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { mar
 main { display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */ }
 
 /** Images */
-img { max-width: 100%; vertical-align: middle; }
+img { display: block; margin: 0 auto; max-width: 100%; }
 
 /** Figures */
 figure > img { display: block; }
