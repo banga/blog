@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2020-03-03T12:37:31-08:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Shrey Banga’s Blog</title><subtitle>Blogging like it's 2005</subtitle><author><name>Shrey Banga</name></author><entry><title type="html">Little known features of iTerm2</title><link href="http://localhost:4000/blog/2020/03/01/little-known-features-of-iterm2.html" rel="alternate" type="text/html" title="Little known features of iTerm2" /><published>2020-03-01T17:08:04-08:00</published><updated>2020-03-01T17:08:04-08:00</updated><id>http://localhost:4000/blog/2020/03/01/little-known-features-of-iterm2</id><content type="html" xml:base="http://localhost:4000/blog/2020/03/01/little-known-features-of-iterm2.html">&lt;p&gt;&lt;a href=&quot;https://iterm2.com/&quot;&gt;iTerm2&lt;/a&gt; has a lot of little-known features that can make development much easier.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2020-03-07T12:14:23-08:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Shrey Banga’s Blog</title><subtitle>Blogging like it's 2005</subtitle><author><name>Shrey Banga</name></author><entry><title type="html">Syncing dev environments the hard way</title><link href="http://localhost:4000/blog/2020/03/07/syncing-dev-environments-the-hard-way.html" rel="alternate" type="text/html" title="Syncing dev environments the hard way" /><published>2020-03-07T09:43:04-08:00</published><updated>2020-03-07T09:43:04-08:00</updated><id>http://localhost:4000/blog/2020/03/07/syncing-dev-environments-the-hard-way</id><content type="html" xml:base="http://localhost:4000/blog/2020/03/07/syncing-dev-environments-the-hard-way.html">&lt;p&gt;If you use multiple machines for development, you probably run into the problem of keeping your dev environments in sync. &lt;!--more--&gt; For example, say your coworker introduced you to &lt;a href=&quot;https://github.com/junegunn/fzf&quot;&gt;fzf&lt;/a&gt; and you installed it on your work machine. Wouldn’t it be nice if it was also installed on your machine at home when you opened it?&lt;/p&gt;
+
+&lt;p&gt;Some of these changes only require sharing dotfiles (e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.zshrc&lt;/code&gt;) which is simple enough to do via something like Dropbox. However, I wanted to sync much more, like my zsh plugins, vscode extensions, Mac apps, fonts etc.&lt;/p&gt;
+
+&lt;p&gt;Luckily, I enjoy spending hours of programming to save minutes of future drudgery. The solution I landed on (inspired by &lt;a href=&quot;https://github.com/mathiasbynens/dotfiles&quot;&gt;mathiasbynens/dotfiles&lt;/a&gt;) is a Github repo with files that describe the environment and a script that makes sure the environment matches them.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/assets/dotfiles-update.gif&quot; alt=&quot;Gif showing the sync script running&quot; style=&quot;max-height: 600px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The rest of this post describes my setup in detail, but if you just want the repo, check out &lt;a href=&quot;https://github.com/banga/dotfiles-template&quot;&gt;banga/dotfiles-template&lt;/a&gt;. It’s a cleaned-up version of my personal setup that you can just clone and customize.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-this-works&quot;&gt;How this works&lt;/h2&gt;
+
+&lt;p&gt;Syncing happens via a shell script, &lt;a href=&quot;https://github.com/banga/dotfiles-template/blob/master/.updatelaptop&quot;&gt;.updatelaptop&lt;/a&gt;, which is invoked automatically every time you start a new shell. Once a day, it will pull any updates from the repo and trigger the &lt;a href=&quot;https://github.com/banga/dotfiles-template/blob/master/update.py&quot;&gt;update.py&lt;/a&gt; file which ensures that the environment matches the expected state.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://github.com/banga/dotfiles-template/blob/master/update.py&quot;&gt;update.py&lt;/a&gt; script runs a number of checks and runs fixes for checks that fail. Here are the notable ones:&lt;/p&gt;
+
+&lt;h3 id=&quot;dotfiles&quot;&gt;Dotfiles&lt;/h3&gt;
+
+&lt;p&gt;This ensures that the dotfiles in my home directory are symlinked to the dotfiles checked into this repo. I keep my common shell settings in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.shrc&lt;/code&gt; and machine-specific settings in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.hyperlocal.shrc&lt;/code&gt;, which is gitignored.&lt;/p&gt;
+
+&lt;h3 id=&quot;brew&quot;&gt;Brew&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BrewBundle&lt;/code&gt; ensures that everything in the checked-in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Brewfile&lt;/code&gt; is installed. This is the most powerful check for ensuring a consistent environment across machines. I can even use it to sync my favorite monospace font: &lt;a href=&quot;https://www.jetbrains.com/lp/mono/&quot;&gt;JetBrains mono&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;zsh&quot;&gt;Zsh&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OhMyZsh&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OhMyZshCustomPlugins&lt;/code&gt; checks ensure that &lt;a href=&quot;https://ohmyz.sh/&quot;&gt;Oh My Zsh&lt;/a&gt; and the plugins I use for it are installed. The plugins are included as submodules in this repo and symlinked to the zsh directory.&lt;/p&gt;
+
+&lt;h3 id=&quot;git-commit-previews&quot;&gt;Git commit previews&lt;/h3&gt;
+
+&lt;p&gt;This copies a custom CSS file I wrote to make &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git instaweb&lt;/code&gt; output look similar to Github. Along with this file, I have a shell command that allows me to preview my latest commit before pushing:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;function &lt;/span&gt;gcpr&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    pkill &lt;span class=&quot;nt&quot;&gt;-9&lt;/span&gt; lighttpd
+    git instaweb start &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;commit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;git rev-parse &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:-&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;HEAD&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# Assumes git instaweb is running on port 1234&lt;/span&gt;
+    open &lt;span class=&quot;s2&quot;&gt;&quot;http://127.0.0.1:1234/?p=.git;a=commitdiff;ds=sidebyside;h=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$commit&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/assets/git-commit-preview.gif&quot; alt=&quot;Gif showing git commit preview command working&quot; style=&quot;max-height: 600px&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;vs-code&quot;&gt;VS Code&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VSCodeSyncing&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VSCodeExtensions&lt;/code&gt; checks ensure that my vscode settings and extensions are synced across machines. I find this particularly useful because I often make small tweaks to vscode in one machine and end up needing them on another.&lt;/p&gt;
+
+&lt;h2 id=&quot;dropbox&quot;&gt;Dropbox&lt;/h2&gt;
+
+&lt;p&gt;I still end up using Dropbox for syncing some settings which I change often enough for it to be too annoying to have to check-in into a repo and push. These include &lt;a href=&quot;/blog/2020/03/01/little-known-features-of-iterm2.html&quot;&gt;iTerm2 settings&lt;/a&gt;, Karabiner configurations, Alfred settings etc.&lt;/p&gt;</content><author><name>Shrey Banga</name></author><summary type="html">If you use multiple machines for development, you probably run into the problem of keeping your dev environments in sync.</summary></entry><entry><title type="html">Little known features of iTerm2</title><link href="http://localhost:4000/blog/2020/03/01/little-known-features-of-iterm2.html" rel="alternate" type="text/html" title="Little known features of iTerm2" /><published>2020-03-01T17:08:04-08:00</published><updated>2020-03-01T17:08:04-08:00</updated><id>http://localhost:4000/blog/2020/03/01/little-known-features-of-iterm2</id><content type="html" xml:base="http://localhost:4000/blog/2020/03/01/little-known-features-of-iterm2.html">&lt;p&gt;&lt;a href=&quot;https://iterm2.com/&quot;&gt;iTerm2&lt;/a&gt; has a lot of little-known features that can make development much easier.&lt;/p&gt;
 
 &lt;h2 id=&quot;smart-selection&quot;&gt;Smart Selection&lt;/h2&gt;
 
