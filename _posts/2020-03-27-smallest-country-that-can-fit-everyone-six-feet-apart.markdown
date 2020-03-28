@@ -52,15 +52,15 @@ $$
 
 ### And the answer is...
 
-According to Wikipedia[^4], this is just shy of the land area of Portugal 🇵🇹.
-We could also squeeze into Hungary 🇭🇺 if some of us were willing to swim.
+According to Wikipedia[^4], this is just shy of the land area of **Portugal 🇵🇹**.
+We could also squeeze into **Hungary 🇭🇺** if some of us were willing to swim.
 
 ## Corollaries
 
 ### How many people can San Francisco fit standing 6 feet apart?
 
 Dividing the area of San Francisco by $$2 \sqrt{3} \cdot 36 \text{ft}^2$$, gives
-us around 10.5 million people.
+us around **10.5 million** people.
 
 ### Are there any countries where people couldn't stand 6 feet apart?
 

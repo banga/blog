@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2020-03-27T23:36:09-07:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Shrey Banga’s Blog</title><subtitle>Blogging like it's 2005</subtitle><author><name>Shrey Banga</name></author><entry><title type="html">What’s the smallest country that can fit everyone standing six feet apart?</title><link href="http://localhost:4000/blog/2020/03/27/smallest-country-that-can-fit-everyone-six-feet-apart.html" rel="alternate" type="text/html" title="What's the smallest country that can fit everyone standing six feet apart?" /><published>2020-03-27T22:08:15-07:00</published><updated>2020-03-27T22:08:15-07:00</updated><id>http://localhost:4000/blog/2020/03/27/smallest-country-that-can-fit-everyone-six-feet-apart</id><content type="html" xml:base="http://localhost:4000/blog/2020/03/27/smallest-country-that-can-fit-everyone-six-feet-apart.html">&lt;p&gt;Today’s &lt;a href=&quot;https://xkcd.com/2286/&quot;&gt;xkcd&lt;/a&gt; got me wondering how much land would we
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2020-03-27T23:37:30-07:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Shrey Banga’s Blog</title><subtitle>Blogging like it's 2005</subtitle><author><name>Shrey Banga</name></author><entry><title type="html">What’s the smallest country that can fit everyone standing six feet apart?</title><link href="http://localhost:4000/blog/2020/03/27/smallest-country-that-can-fit-everyone-six-feet-apart.html" rel="alternate" type="text/html" title="What's the smallest country that can fit everyone standing six feet apart?" /><published>2020-03-27T22:08:15-07:00</published><updated>2020-03-27T22:08:15-07:00</updated><id>http://localhost:4000/blog/2020/03/27/smallest-country-that-can-fit-everyone-six-feet-apart</id><content type="html" xml:base="http://localhost:4000/blog/2020/03/27/smallest-country-that-can-fit-everyone-six-feet-apart.html">&lt;p&gt;Today’s &lt;a href=&quot;https://xkcd.com/2286/&quot;&gt;xkcd&lt;/a&gt; got me wondering how much land would we
 need if everyone stood six feet apart.&lt;/p&gt;
 
 &lt;h2 id=&quot;methodology&quot;&gt;Methodology&lt;/h2&gt;
@@ -44,15 +44,15 @@ smallest area possible. This can be calculated as follows:&lt;/p&gt;
 
 &lt;h3 id=&quot;and-the-answer-is&quot;&gt;And the answer is…&lt;/h3&gt;
 
-&lt;p&gt;According to Wikipedia&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;, this is just shy of the land area of Portugal 🇵🇹.
-We could also squeeze into Hungary 🇭🇺 if some of us were willing to swim.&lt;/p&gt;
+&lt;p&gt;According to Wikipedia&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;, this is just shy of the land area of &lt;strong&gt;Portugal 🇵🇹&lt;/strong&gt;.
+We could also squeeze into &lt;strong&gt;Hungary 🇭🇺&lt;/strong&gt; if some of us were willing to swim.&lt;/p&gt;
 
 &lt;h2 id=&quot;corollaries&quot;&gt;Corollaries&lt;/h2&gt;
 
 &lt;h3 id=&quot;how-many-people-can-san-francisco-fit-standing-6-feet-apart&quot;&gt;How many people can San Francisco fit standing 6 feet apart?&lt;/h3&gt;
 
 &lt;p&gt;Dividing the area of San Francisco by &lt;script type=&quot;math/tex&quot;&gt;2 \sqrt{3} \cdot 36 \text{ft}^2&lt;/script&gt;, gives
-us around 10.5 million people.&lt;/p&gt;
+us around &lt;strong&gt;10.5 million&lt;/strong&gt; people.&lt;/p&gt;
 
 &lt;h3 id=&quot;are-there-any-countries-where-people-couldnt-stand-6-feet-apart&quot;&gt;Are there any countries where people couldn’t stand 6 feet apart?&lt;/h3&gt;
 
