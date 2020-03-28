@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2020-03-27T23:08:53-07:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Shrey Banga’s Blog</title><subtitle>Blogging like it's 2005</subtitle><author><name>Shrey Banga</name></author><entry><title type="html">What’s the smallest country that can fit everyone standing six feet apart?</title><link href="http://localhost:4000/blog/2020/03/27/smallest-country-that-can-fit-everyone-six-feet-apart.html" rel="alternate" type="text/html" title="What's the smallest country that can fit everyone standing six feet apart?" /><published>2020-03-27T22:08:15-07:00</published><updated>2020-03-27T22:08:15-07:00</updated><id>http://localhost:4000/blog/2020/03/27/smallest-country-that-can-fit-everyone-six-feet-apart</id><content type="html" xml:base="http://localhost:4000/blog/2020/03/27/smallest-country-that-can-fit-everyone-six-feet-apart.html">&lt;p&gt;Today’s &lt;a href=&quot;https://xkcd.com/2286/&quot;&gt;xkcd&lt;/a&gt; got me wondering.
-My answer: &lt;strong&gt;Portugal 🇵🇹&lt;/strong&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2020-03-27T23:36:09-07:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Shrey Banga’s Blog</title><subtitle>Blogging like it's 2005</subtitle><author><name>Shrey Banga</name></author><entry><title type="html">What’s the smallest country that can fit everyone standing six feet apart?</title><link href="http://localhost:4000/blog/2020/03/27/smallest-country-that-can-fit-everyone-six-feet-apart.html" rel="alternate" type="text/html" title="What's the smallest country that can fit everyone standing six feet apart?" /><published>2020-03-27T22:08:15-07:00</published><updated>2020-03-27T22:08:15-07:00</updated><id>http://localhost:4000/blog/2020/03/27/smallest-country-that-can-fit-everyone-six-feet-apart</id><content type="html" xml:base="http://localhost:4000/blog/2020/03/27/smallest-country-that-can-fit-everyone-six-feet-apart.html">&lt;p&gt;Today’s &lt;a href=&quot;https://xkcd.com/2286/&quot;&gt;xkcd&lt;/a&gt; got me wondering how much land would we
+need if everyone stood six feet apart.&lt;/p&gt;
 
 &lt;h2 id=&quot;methodology&quot;&gt;Methodology&lt;/h2&gt;
+
+&lt;h3 id=&quot;we-are-all-but-spherical-cows&quot;&gt;We are all but spherical cows&lt;/h3&gt;
 
 &lt;p&gt;If we want everyone to keep a minimum distance of &lt;script type=&quot;math/tex&quot;&gt;r&lt;/script&gt; from each other, the
 problem boils down to efficiently packing &lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt; circles of radius &lt;script type=&quot;math/tex&quot;&gt;r&lt;/script&gt; in the
@@ -24,6 +26,8 @@ smallest area possible. This can be calculated as follows:&lt;/p&gt;
         &amp; = 2 \sqrt{3} \cdot n \cdot r^2
 \end{align} %]]&gt;&lt;/script&gt;
 
+&lt;h3 id=&quot;crunching-the-numbers&quot;&gt;Crunching the numbers&lt;/h3&gt;
+
 &lt;p&gt;Plugging in the current world population&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; and the recommended distance of 6 feet&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;n = \text{7,773,861,168}&lt;/script&gt;
@@ -38,7 +42,23 @@ smallest area possible. This can be calculated as follows:&lt;/p&gt;
         &amp; = 34,775 \text{mi}^2 \\
 \end{align} %]]&gt;&lt;/script&gt;
 
-&lt;p&gt;According to Wikipedia&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;, this is just shy of the land area of Portugal 🇵🇹.&lt;/p&gt;
+&lt;h3 id=&quot;and-the-answer-is&quot;&gt;And the answer is…&lt;/h3&gt;
+
+&lt;p&gt;According to Wikipedia&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;, this is just shy of the land area of Portugal 🇵🇹.
+We could also squeeze into Hungary 🇭🇺 if some of us were willing to swim.&lt;/p&gt;
+
+&lt;h2 id=&quot;corollaries&quot;&gt;Corollaries&lt;/h2&gt;
+
+&lt;h3 id=&quot;how-many-people-can-san-francisco-fit-standing-6-feet-apart&quot;&gt;How many people can San Francisco fit standing 6 feet apart?&lt;/h3&gt;
+
+&lt;p&gt;Dividing the area of San Francisco by &lt;script type=&quot;math/tex&quot;&gt;2 \sqrt{3} \cdot 36 \text{ft}^2&lt;/script&gt;, gives
+us around 10.5 million people.&lt;/p&gt;
+
+&lt;h3 id=&quot;are-there-any-countries-where-people-couldnt-stand-6-feet-apart&quot;&gt;Are there any countries where people couldn’t stand 6 feet apart?&lt;/h3&gt;
+
+&lt;p&gt;1 square mile of land can have 223,563 people standing 6 feet apart. This is
+much higher than the most densely populated countries and territories in the
+world[5].&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
@@ -57,7 +77,7 @@ smallest area possible. This can be calculated as follows:&lt;/p&gt;
       &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area&quot;&gt;List of countries and dependencies by area - Wikipedia&lt;/a&gt; &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Shrey Banga</name></author><summary type="html">Today’s xkcd got me wondering. My answer: Portugal 🇵🇹.</summary></entry><entry><title type="html">Syncing dev environments the hard way</title><link href="http://localhost:4000/blog/2020/03/07/syncing-dev-environments-the-hard-way.html" rel="alternate" type="text/html" title="Syncing dev environments the hard way" /><published>2020-03-07T09:43:04-08:00</published><updated>2020-03-07T09:43:04-08:00</updated><id>http://localhost:4000/blog/2020/03/07/syncing-dev-environments-the-hard-way</id><content type="html" xml:base="http://localhost:4000/blog/2020/03/07/syncing-dev-environments-the-hard-way.html">&lt;p&gt;If you use multiple machines for development, you probably run into the problem of keeping your dev environments in sync. &lt;!--more--&gt; For example, say your coworker introduced you to &lt;a href=&quot;https://github.com/junegunn/fzf&quot;&gt;fzf&lt;/a&gt; and you installed it on your work machine. Wouldn’t it be nice if it was also installed on your machine at home when you opened it?&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Shrey Banga</name></author><summary type="html">Today’s xkcd got me wondering how much land would we need if everyone stood six feet apart.</summary></entry><entry><title type="html">Syncing dev environments the hard way</title><link href="http://localhost:4000/blog/2020/03/07/syncing-dev-environments-the-hard-way.html" rel="alternate" type="text/html" title="Syncing dev environments the hard way" /><published>2020-03-07T09:43:04-08:00</published><updated>2020-03-07T09:43:04-08:00</updated><id>http://localhost:4000/blog/2020/03/07/syncing-dev-environments-the-hard-way</id><content type="html" xml:base="http://localhost:4000/blog/2020/03/07/syncing-dev-environments-the-hard-way.html">&lt;p&gt;If you use multiple machines for development, you probably run into the problem of keeping your dev environments in sync. &lt;!--more--&gt; For example, say your coworker introduced you to &lt;a href=&quot;https://github.com/junegunn/fzf&quot;&gt;fzf&lt;/a&gt; and you installed it on your work machine. Wouldn’t it be nice if it was also installed on your machine at home when you opened it?&lt;/p&gt;
 
 &lt;p&gt;Some of these changes only require sharing dotfiles (e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.zshrc&lt;/code&gt;) which is simple enough to do via something like Dropbox. However, I wanted to sync much more, like my zsh plugins, vscode extensions, Mac apps, fonts etc.&lt;/p&gt;
 
