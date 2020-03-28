@@ -66,7 +66,7 @@ us around **10.5 million** people.
 
 1 square mile of land can have 223,563 people standing 6 feet apart. This is
 much higher than the most densely populated countries and territories in the
-world[5].
+world[^5].
 
 ## References
 
