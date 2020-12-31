@@ -1,86 +1,84 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://shreyban.ga//blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shreyban.ga//blog/" rel="alternate" type="text/html" /><updated>2020-12-31T14:43:30-08:00</updated><id>https://shreyban.ga//blog/feed.xml</id><title type="html">Shrey Banga’s Blog</title><subtitle>Blogging like it's 2005</subtitle><author><name>Shrey Banga</name></author><entry><title type="html">What’s the smallest country that can fit everyone standing six feet apart?</title><link href="https://shreyban.ga//blog/2020/03/27/smallest-country-that-can-fit-everyone-six-feet-apart.html" rel="alternate" type="text/html" title="What's the smallest country that can fit everyone standing six feet apart?" /><published>2020-03-27T22:08:15-07:00</published><updated>2020-03-27T22:08:15-07:00</updated><id>https://shreyban.ga//blog/2020/03/27/smallest-country-that-can-fit-everyone-six-feet-apart</id><content type="html" xml:base="https://shreyban.ga//blog/2020/03/27/smallest-country-that-can-fit-everyone-six-feet-apart.html">&lt;p&gt;Today’s &lt;a href=&quot;https://xkcd.com/2286/&quot;&gt;xkcd&lt;/a&gt; got me wondering how much land would we
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://shreyban.ga//blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shreyban.ga//blog/" rel="alternate" type="text/html" /><updated>2020-12-31T14:50:11-08:00</updated><id>https://shreyban.ga//blog/feed.xml</id><title type="html">Shrey Banga’s Blog</title><subtitle>Blogging like it's 2005</subtitle><author><name>Shrey Banga</name></author><entry><title type="html">What’s the smallest country that can fit everyone standing six feet apart?</title><link href="https://shreyban.ga//blog/2020/03/27/smallest-country-that-can-fit-everyone-six-feet-apart.html" rel="alternate" type="text/html" title="What’s the smallest country that can fit everyone standing six feet apart?" /><published>2020-03-27T22:08:15-07:00</published><updated>2020-03-27T22:08:15-07:00</updated><id>https://shreyban.ga//blog/2020/03/27/smallest-country-that-can-fit-everyone-six-feet-apart</id><content type="html" xml:base="https://shreyban.ga//blog/2020/03/27/smallest-country-that-can-fit-everyone-six-feet-apart.html">&lt;p&gt;Today’s &lt;a href=&quot;https://xkcd.com/2286/&quot;&gt;xkcd&lt;/a&gt; got me wondering how much land would we
 need if everyone stood six feet apart.&lt;/p&gt;
 
 &lt;h2 id=&quot;methodology&quot;&gt;Methodology&lt;/h2&gt;
 
 &lt;h3 id=&quot;we-are-all-but-spherical-cows&quot;&gt;We are all but spherical cows&lt;/h3&gt;
 
-&lt;p&gt;If we want everyone to keep a minimum distance of &lt;script type=&quot;math/tex&quot;&gt;r&lt;/script&gt; from each other, the
-problem boils down to efficiently packing &lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt; circles of radius &lt;script type=&quot;math/tex&quot;&gt;r&lt;/script&gt; in the
+&lt;p&gt;If we want everyone to keep a minimum distance of \(r\) from each other, the
+problem boils down to efficiently packing \(n\) circles of radius \(r\) in the
 smallest area possible. This can be calculated as follows:&lt;/p&gt;
 
-&lt;p&gt;Area of a circle with radius &lt;script type=&quot;math/tex&quot;&gt;r&lt;/script&gt;,&lt;/p&gt;
+&lt;p&gt;Area of a circle with radius \(r\),&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;A_r = \pi r^2&lt;/script&gt;
+\[A_r = \pi r^2\]
 
-&lt;p&gt;Optimal circle packing density&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;,&lt;/p&gt;
+&lt;p&gt;Optimal circle packing density&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;,&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\eta  = \frac{\pi\sqrt{3}}{6}&lt;/script&gt;
+\[\eta  = \frac{\pi\sqrt{3}}{6}\]
 
-&lt;p&gt;Area required for &lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt; people,&lt;/p&gt;
+&lt;p&gt;Area required for \(n\) people,&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-    A_n &amp; = n \cdot \frac{A_r}{\eta} \\
-        &amp; = n \cdot \frac{\pi r^2}{\frac{\pi \sqrt{3}}{6}} \\
-        &amp; = 2 \sqrt{3} \cdot n \cdot r^2
-\end{align} %]]&gt;&lt;/script&gt;
+\[\begin{align}
+    A_n &amp;amp; = n \cdot \frac{A_r}{\eta} \\
+        &amp;amp; = n \cdot \frac{\pi r^2}{\frac{\pi \sqrt{3}}{6}} \\
+        &amp;amp; = 2 \sqrt{3} \cdot n \cdot r^2
+\end{align}\]
 
 &lt;h3 id=&quot;crunching-the-numbers&quot;&gt;Crunching the numbers&lt;/h3&gt;
 
-&lt;p&gt;Plugging in the current world population&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; and the recommended distance of 6 feet&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+&lt;p&gt;Plugging in the current world population&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; and the recommended distance of 6 feet&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;n = \text{7,773,861,168}&lt;/script&gt;
+\[n = \text{7,773,861,168}\]
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;r = 6\text{ft}&lt;/script&gt;
+\[r = 6\text{ft}\]
 
 &lt;p&gt;we get&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-    A_n &amp; = 9.695×10^{11} \text{ft}^2 \\
-        &amp; = 34,775 \text{mi}^2 \\
-\end{align} %]]&gt;&lt;/script&gt;
+\[\begin{align}
+    A_n &amp;amp; = 9.695×10^{11} \text{ft}^2 \\
+        &amp;amp; = 34,775 \text{mi}^2 \\
+\end{align}\]
 
 &lt;h3 id=&quot;and-the-answer-is&quot;&gt;And the answer is…&lt;/h3&gt;
 
-&lt;p&gt;According to Wikipedia&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;, this is just shy of the land area of &lt;strong&gt;Portugal 🇵🇹&lt;/strong&gt;.
+&lt;p&gt;According to Wikipedia&lt;sup id=&quot;fnref:4&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;, this is just shy of the land area of &lt;strong&gt;Portugal 🇵🇹&lt;/strong&gt;.
 We could also squeeze into &lt;strong&gt;Hungary 🇭🇺&lt;/strong&gt; if some of us were willing to swim.&lt;/p&gt;
 
 &lt;h2 id=&quot;corollaries&quot;&gt;Corollaries&lt;/h2&gt;
 
 &lt;h3 id=&quot;how-many-people-can-san-francisco-fit-standing-6-feet-apart&quot;&gt;How many people can San Francisco fit standing 6 feet apart?&lt;/h3&gt;
 
-&lt;p&gt;Dividing the area of San Francisco by &lt;script type=&quot;math/tex&quot;&gt;2 \sqrt{3} \cdot 36 \text{ft}^2&lt;/script&gt;, gives
+&lt;p&gt;Dividing the area of San Francisco by \(2 \sqrt{3} \cdot 36 \text{ft}^2\), gives
 us around &lt;strong&gt;10.5 million&lt;/strong&gt; people.&lt;/p&gt;
 
 &lt;h3 id=&quot;are-there-any-countries-where-people-couldnt-stand-6-feet-apart&quot;&gt;Are there any countries where people couldn’t stand 6 feet apart?&lt;/h3&gt;
 
 &lt;p&gt;1 square mile of land can have 223,563 people standing 6 feet apart. This is
 much higher than the most densely populated countries and territories in the
-world&lt;sup id=&quot;fnref:5&quot;&gt;&lt;a href=&quot;#fn:5&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+world&lt;sup id=&quot;fnref:5&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:5&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
-&lt;div class=&quot;footnotes&quot;&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Circle_packing&quot;&gt;Circle packing - Wikipedia&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Circle_packing&quot;&gt;Circle packing - Wikipedia&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.worldometers.info/world-population/&quot;&gt;Current World Population - Worldometers&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.worldometers.info/world-population/&quot;&gt;Current World Population - Worldometers&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
-    &lt;li id=&quot;fn:3&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html&quot;&gt;Prevention of Coronavirus Disease 2019 (COVID-19) - CDC&lt;/a&gt; &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html&quot;&gt;Prevention of Coronavirus Disease 2019 (COVID-19) - CDC&lt;/a&gt; &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
-    &lt;li id=&quot;fn:4&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area&quot;&gt;List of countries and dependencies by area - Wikipedia&lt;/a&gt; &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:4&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area&quot;&gt;List of countries and dependencies by area - Wikipedia&lt;/a&gt; &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
-    &lt;li id=&quot;fn:5&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population_density&quot;&gt;List of countries and dependencies by population density - Wikipedia&lt;/a&gt; &lt;a href=&quot;#fnref:5&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:5&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population_density&quot;&gt;List of countries and dependencies by population density - Wikipedia&lt;/a&gt; &lt;a href=&quot;#fnref:5&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Shrey Banga</name></author><summary type="html">Today’s xkcd got me wondering how much land would we need if everyone stood six feet apart.</summary></entry><entry><title type="html">Syncing dev environments the hard way</title><link href="https://shreyban.ga//blog/2020/03/07/syncing-dev-environments-the-hard-way.html" rel="alternate" type="text/html" title="Syncing dev environments the hard way" /><published>2020-03-07T09:43:04-08:00</published><updated>2020-03-07T09:43:04-08:00</updated><id>https://shreyban.ga//blog/2020/03/07/syncing-dev-environments-the-hard-way</id><content type="html" xml:base="https://shreyban.ga//blog/2020/03/07/syncing-dev-environments-the-hard-way.html">&lt;p&gt;If you use multiple machines for development, you probably run into the problem of keeping your dev environments in sync. &lt;!--more--&gt; For example, say your coworker introduced you to &lt;a href=&quot;https://github.com/junegunn/fzf&quot;&gt;fzf&lt;/a&gt; and you installed it on your work machine. Wouldn’t it be nice if it was also installed on your machine at home when you opened it?&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Shrey Banga</name></author><category term="covid-19" /><summary type="html">Today’s xkcd got me wondering how much land would we need if everyone stood six feet apart.</summary></entry><entry><title type="html">Syncing dev environments the hard way</title><link href="https://shreyban.ga//blog/2020/03/07/syncing-dev-environments-the-hard-way.html" rel="alternate" type="text/html" title="Syncing dev environments the hard way" /><published>2020-03-07T09:43:04-08:00</published><updated>2020-03-07T09:43:04-08:00</updated><id>https://shreyban.ga//blog/2020/03/07/syncing-dev-environments-the-hard-way</id><content type="html" xml:base="https://shreyban.ga//blog/2020/03/07/syncing-dev-environments-the-hard-way.html">&lt;p&gt;If you use multiple machines for development, you probably run into the problem of keeping your dev environments in sync. &lt;!--more--&gt; For example, say your coworker introduced you to &lt;a href=&quot;https://github.com/junegunn/fzf&quot;&gt;fzf&lt;/a&gt; and you installed it on your work machine. Wouldn’t it be nice if it was also installed on your machine at home when you opened it?&lt;/p&gt;
 
 &lt;p&gt;Some of these changes only require sharing dotfiles (e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.zshrc&lt;/code&gt;) which is simple enough to do via something like Dropbox. However, I wanted to sync much more, like my zsh plugins, vscode extensions, Mac apps, fonts etc.&lt;/p&gt;
 
@@ -129,7 +127,7 @@ world&lt;sup id=&quot;fnref:5&quot;&gt;&lt;a href=&quot;#fn:5&quot; class=&quot;
 
 &lt;h2 id=&quot;dropbox&quot;&gt;Dropbox&lt;/h2&gt;
 
-&lt;p&gt;I still end up using Dropbox for syncing some settings which I change often enough for it to be too annoying to have to check-in into a repo and push. These include &lt;a href=&quot;/blog/2020/03/01/little-known-features-of-iterm2.html&quot;&gt;iTerm2 settings&lt;/a&gt;, Karabiner configurations, Alfred settings etc.&lt;/p&gt;</content><author><name>Shrey Banga</name></author><summary type="html">If you use multiple machines for development, you probably run into the problem of keeping your dev environments in sync.</summary></entry><entry><title type="html">Little known features of iTerm2</title><link href="https://shreyban.ga//blog/2020/03/01/little-known-features-of-iterm2.html" rel="alternate" type="text/html" title="Little known features of iTerm2" /><published>2020-03-01T17:08:04-08:00</published><updated>2020-03-01T17:08:04-08:00</updated><id>https://shreyban.ga//blog/2020/03/01/little-known-features-of-iterm2</id><content type="html" xml:base="https://shreyban.ga//blog/2020/03/01/little-known-features-of-iterm2.html">&lt;p&gt;&lt;a href=&quot;https://iterm2.com/&quot;&gt;iTerm2&lt;/a&gt; has a lot of little-known features that can make development much easier.&lt;/p&gt;
+&lt;p&gt;I still end up using Dropbox for syncing some settings which I change often enough for it to be too annoying to have to check-in into a repo and push. These include &lt;a href=&quot;/blog/2020/03/01/little-known-features-of-iterm2.html&quot;&gt;iTerm2 settings&lt;/a&gt;, Karabiner configurations, Alfred settings etc.&lt;/p&gt;</content><author><name>Shrey Banga</name></author><category term="development" /><category term="git" /><category term="github" /><summary type="html">If you use multiple machines for development, you probably run into the problem of keeping your dev environments in sync.</summary></entry><entry><title type="html">Little known features of iTerm2</title><link href="https://shreyban.ga//blog/2020/03/01/little-known-features-of-iterm2.html" rel="alternate" type="text/html" title="Little known features of iTerm2" /><published>2020-03-01T17:08:04-08:00</published><updated>2020-03-01T17:08:04-08:00</updated><id>https://shreyban.ga//blog/2020/03/01/little-known-features-of-iterm2</id><content type="html" xml:base="https://shreyban.ga//blog/2020/03/01/little-known-features-of-iterm2.html">&lt;p&gt;&lt;a href=&quot;https://iterm2.com/&quot;&gt;iTerm2&lt;/a&gt; has a lot of little-known features that can make development much easier.&lt;/p&gt;
 
 &lt;h2 id=&quot;smart-selection&quot;&gt;Smart Selection&lt;/h2&gt;
 
@@ -207,4 +205,4 @@ world&lt;sup id=&quot;fnref:5&quot;&gt;&lt;a href=&quot;#fn:5&quot; class=&quot;
   &lt;li&gt;Reload iTerm2&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;These profiles should now show up in iTerm2 as dynamic profiles. You can then start sessions with these profiles to create a window arrangement and hit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Command-Shift-S&lt;/code&gt; to save it. Then you can start all of these sessions at any time by just pressing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Command-Shift-R&lt;/code&gt; or tell iTerm2 to open the arrangement when it starts! Check out &lt;a href=&quot;https://blog.andrewray.me/how-to-create-custom-iterm2-window-arrangments/&quot;&gt;https://blog.andrewray.me/how-to-create-custom-iterm2-window-arrangments/&lt;/a&gt; for a detailed guide on window arrangements.&lt;/p&gt;</content><author><name>Shrey Banga</name></author><summary type="html">iTerm2 has a lot of little-known features that can make development much easier.</summary></entry></feed>
+&lt;p&gt;These profiles should now show up in iTerm2 as dynamic profiles. You can then start sessions with these profiles to create a window arrangement and hit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Command-Shift-S&lt;/code&gt; to save it. Then you can start all of these sessions at any time by just pressing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Command-Shift-R&lt;/code&gt; or tell iTerm2 to open the arrangement when it starts! Check out &lt;a href=&quot;https://blog.andrewray.me/how-to-create-custom-iterm2-window-arrangments/&quot;&gt;https://blog.andrewray.me/how-to-create-custom-iterm2-window-arrangments/&lt;/a&gt; for a detailed guide on window arrangements.&lt;/p&gt;</content><author><name>Shrey Banga</name></author><category term="iterm2" /><category term="development" /><summary type="html">iTerm2 has a lot of little-known features that can make development much easier.</summary></entry></feed>
