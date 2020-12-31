@@ -19,7 +19,7 @@ email: banga.shrey@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Blogging like it's 2005
 baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "https://banga.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://shreyban.ga/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: banga_shrey
 github_username: banga
 repository: blog
