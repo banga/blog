@@ -20,7 +20,7 @@ To make Command-clicking on a commit hash open it in Github, do the following:
 
 1. Install [hub](https://github.com/github/hub)
 2. In your iTerm2 Preferences, go to `Profiles -> Advanced -> Smart Selection -> Edit`
-3. Click the `+` button to add a new rule and set the `Regular Expression` to `[0-9a-f]{8,40}`
+3. Click the `+` button to add a new rule and set the `Regular Expression` to `[0-9a-f]{7,40}`
 4. Click on `Edit Actions...` and add a new action
 5. Set the `Action` to `Run Command...`
 6. Set the `Parameter` to `cd "\d" && /usr/local/bin/hub browse -- commit/\0`. You may have to update the path to `hub` here if you installed it to a different directory.
